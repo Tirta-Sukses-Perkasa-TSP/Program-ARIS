@@ -1,0 +1,222 @@
+object Input_Npk_FRM: TInput_Npk_FRM
+  Left = 304
+  Top = 66
+  Width = 893
+  Height = 551
+  BorderIcons = []
+  Caption = 'List Karyawan'
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poMainFormCenter
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Panel1: TPanel
+    Left = 0
+    Top = 471
+    Width = 877
+    Height = 42
+    Align = alBottom
+    Color = clSkyBlue
+    TabOrder = 0
+    object BitBtn2: TBitBtn
+      Left = 8
+      Top = 10
+      Width = 75
+      Height = 25
+      TabOrder = 0
+      Kind = bkCancel
+    end
+    object BitBtn1: TBitBtn
+      Left = 93
+      Top = 10
+      Width = 75
+      Height = 25
+      TabOrder = 1
+      Kind = bkOK
+    end
+    object Button1: TButton
+      Left = 176
+      Top = 10
+      Width = 75
+      Height = 25
+      Caption = 'Refresh'
+      TabOrder = 2
+      Visible = False
+      OnClick = Button1Click
+    end
+  end
+  object Panel2: TPanel
+    Left = 0
+    Top = 0
+    Width = 877
+    Height = 471
+    Align = alClient
+    Color = clSilver
+    TabOrder = 1
+    object cxGrid1: TcxGrid
+      Left = 1
+      Top = 54
+      Width = 875
+      Height = 416
+      Align = alClient
+      TabOrder = 0
+      LookAndFeel.Kind = lfOffice11
+      LookAndFeel.NativeStyle = True
+      object cxGrid1DBTableView1: TcxGridDBTableView
+        OnDblClick = cxGrid1DBTableView1DblClick
+        OnKeyDown = cxGrid1DBTableView1KeyDown
+        NavigatorButtons.ConfirmDelete = False
+        NavigatorButtons.Insert.Visible = False
+        NavigatorButtons.Delete.Visible = False
+        NavigatorButtons.Edit.Visible = False
+        NavigatorButtons.Post.Visible = False
+        NavigatorButtons.Cancel.Visible = False
+        DataController.DataSource = _DataModuleMaster.Mkaryawan_AktifDS
+        DataController.Filter.PercentWildcard = '*'
+        DataController.Filter.Active = True
+        DataController.Filter.AutoDataSetFilter = True
+        DataController.Filter.SupportedLike = False
+        DataController.Summary.DefaultGroupSummaryItems = <>
+        DataController.Summary.FooterSummaryItems = <
+          item
+            Format = 'Jumlah : #,##0.'
+            Kind = skCount
+            FieldName = 'NAMA_KARYAWAN'
+          end>
+        DataController.Summary.SummaryGroups = <>
+        OptionsBehavior.FocusCellOnTab = True
+        OptionsBehavior.FocusFirstCellOnNewRecord = True
+        OptionsBehavior.GoToNextCellOnEnter = True
+        OptionsBehavior.IncSearch = True
+        OptionsBehavior.NavigatorHints = True
+        OptionsBehavior.FocusCellOnCycle = True
+        OptionsData.CancelOnExit = False
+        OptionsData.Deleting = False
+        OptionsData.DeletingConfirmation = False
+        OptionsData.Editing = False
+        OptionsData.Inserting = False
+        OptionsSelection.MultiSelect = True
+        OptionsView.Navigator = True
+        OptionsView.CellAutoHeight = True
+        OptionsView.ColumnAutoWidth = True
+        OptionsView.GridLineColor = clBtnFace
+        OptionsView.GroupRowStyle = grsOffice11
+        Styles.ContentEven = _DataModule.cxStyle16
+        Styles.ContentOdd = _DataModule.cxStyle1
+        Styles.Footer = _DataModule.cxStyle1
+        Styles.GroupByBox = _DataModule.cxStyle18
+        Styles.Header = _DataModule.cxStyle1
+        object cxGrid1DBTableView1KODE: TcxGridDBColumn
+          DataBinding.FieldName = 'KODE'
+          Width = 212
+        end
+        object cxGrid1DBTableView1NIK: TcxGridDBColumn
+          DataBinding.FieldName = 'NIK'
+          Width = 135
+        end
+        object cxGrid1DBTableView1NAMA: TcxGridDBColumn
+          DataBinding.FieldName = 'NAMA'
+          Width = 228
+        end
+        object cxGrid1DBTableView1BAGIAN: TcxGridDBColumn
+          DataBinding.FieldName = 'BAGIAN'
+          Width = 133
+        end
+        object cxGrid1DBTableView1JABATAN: TcxGridDBColumn
+          DataBinding.FieldName = 'JABATAN'
+          Width = 148
+        end
+      end
+      object cxGrid1DBTableView2: TcxGridDBTableView
+        NavigatorButtons.ConfirmDelete = False
+        NavigatorButtons.Insert.Visible = False
+        NavigatorButtons.Delete.Visible = False
+        NavigatorButtons.Edit.Visible = False
+        NavigatorButtons.Post.Visible = False
+        NavigatorButtons.Cancel.Visible = False
+        DataController.Summary.DefaultGroupSummaryItems = <>
+        DataController.Summary.FooterSummaryItems = <>
+        DataController.Summary.SummaryGroups = <>
+        OptionsSelection.MultiSelect = True
+        OptionsView.Navigator = True
+        OptionsView.ColumnAutoWidth = True
+        OptionsView.GridLineColor = clBtnFace
+        OptionsView.GroupRowStyle = grsOffice11
+        Styles.ContentEven = _DataModule.cxStyle16
+        Styles.ContentOdd = _DataModule.cxStyle1
+        Styles.Footer = _DataModule.cxStyle1
+        Styles.GroupByBox = _DataModule.cxStyle12
+        Styles.Header = _DataModule.cxStyle1
+        object cxGrid1DBTableView2NIK: TcxGridDBColumn
+          DataBinding.FieldName = 'NIK'
+          Width = 81
+        end
+        object cxGrid1DBTableView2NAMA_KARYAWAN: TcxGridDBColumn
+          Caption = 'NAMA KARYAWAN'
+          DataBinding.FieldName = 'NAMA_KARYAWAN'
+          Width = 219
+        end
+        object cxGrid1DBTableView2STATUS_DASAR: TcxGridDBColumn
+          Caption = 'STATUS DASAR'
+          DataBinding.FieldName = 'STATUS_DASAR'
+          Visible = False
+          GroupIndex = 0
+          Width = 105
+        end
+        object cxGrid1DBTableView2STATUS_KARYAWAN: TcxGridDBColumn
+          Caption = 'STATUS KARYAWAN'
+          DataBinding.FieldName = 'STATUS_KARYAWAN'
+          Width = 141
+        end
+        object cxGrid1DBTableView2SECTION: TcxGridDBColumn
+          Caption = 'BAGIAN'
+          DataBinding.FieldName = 'SECTION'
+          Width = 197
+        end
+        object cxGrid1DBTableView2NIK_ID: TcxGridDBColumn
+          DataBinding.FieldName = 'NIK_ID'
+          Visible = False
+        end
+        object cxGrid1DBTableView2STATUS: TcxGridDBColumn
+          DataBinding.FieldName = 'STATUS'
+          Visible = False
+        end
+      end
+      object cxGrid1Level1: TcxGridLevel
+        GridView = cxGrid1DBTableView1
+      end
+    end
+    object Panel3: TPanel
+      Left = 1
+      Top = 1
+      Width = 875
+      Height = 53
+      Align = alTop
+      BevelOuter = bvNone
+      Ctl3D = False
+      ParentCtl3D = False
+      TabOrder = 1
+      object Label4: TLabel
+        Left = 8
+        Top = 16
+        Width = 78
+        Height = 13
+        Caption = 'Nama Karyawan'
+      end
+      object Edit1: TEdit
+        Left = 96
+        Top = 16
+        Width = 225
+        Height = 19
+        TabOrder = 0
+        OnKeyPress = Edit1KeyPress
+      end
+    end
+  end
+end
