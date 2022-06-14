@@ -1,0 +1,1039 @@
+object MLokasi_GudangFrm: TMLokasi_GudangFrm
+  Left = 166
+  Top = 17
+  BorderStyle = bsDialog
+  BorderWidth = 1
+  Caption = 'MLokasi_GudangFrm'
+  ClientHeight = 626
+  ClientWidth = 1102
+  Color = clWhite
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  FormStyle = fsMDIChild
+  OldCreateOrder = False
+  Position = poDefault
+  Visible = True
+  WindowState = wsMaximized
+  OnClose = FormClose
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object LMDPageControl1: TLMDPageControl
+    Left = 0
+    Top = 0
+    Width = 1102
+    Height = 626
+    Align = alClient
+    TabOrder = 0
+    DockOrientation = doNoOrient
+    ActivePage = LMDTabSheet1
+    object LMDTabSheet1: TLMDTabSheet
+      Left = 4
+      Top = 28
+      Width = 1094
+      Height = 594
+      Bevel.Mode = bmCustom
+      Caption = 'Detil'
+      object Panel1: TPanel
+        Left = 0
+        Top = 0
+        Width = 1094
+        Height = 594
+        Align = alClient
+        BevelOuter = bvNone
+        TabOrder = 0
+        object Panel2: TPanel
+          Left = 0
+          Top = 0
+          Width = 1094
+          Height = 210
+          Align = alTop
+          BevelOuter = bvNone
+          BorderWidth = 2
+          Color = clWhite
+          TabOrder = 0
+          object Label2: TLabel
+            Left = 15
+            Top = 131
+            Width = 48
+            Height = 13
+            BiDiMode = bdLeftToRight
+            Caption = 'Singkatan'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -11
+            Font.Name = 'MS Sans Serif'
+            Font.Style = []
+            ParentBiDiMode = False
+            ParentFont = False
+            Transparent = True
+          end
+          object Label7: TLabel
+            Left = 15
+            Top = 105
+            Width = 38
+            Height = 13
+            BiDiMode = bdLeftToRight
+            Caption = 'Gudang'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -11
+            Font.Name = 'MS Sans Serif'
+            Font.Style = []
+            ParentBiDiMode = False
+            ParentFont = False
+            Transparent = True
+          end
+          object Label15: TLabel
+            Left = 15
+            Top = 79
+            Width = 30
+            Height = 13
+            BiDiMode = bdLeftToRight
+            Caption = 'KODE'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -11
+            Font.Name = 'MS Sans Serif'
+            Font.Style = []
+            ParentBiDiMode = False
+            ParentFont = False
+            Transparent = True
+          end
+          object Label1: TLabel
+            Left = 15
+            Top = 53
+            Width = 41
+            Height = 13
+            BiDiMode = bdLeftToRight
+            Caption = 'Sub Unit'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -11
+            Font.Name = 'MS Sans Serif'
+            Font.Style = []
+            ParentBiDiMode = False
+            ParentFont = False
+            Transparent = True
+          end
+          object cxDBTextEdit6: TcxDBTextEdit
+            Left = 89
+            Top = 124
+            DataBinding.DataField = 'SINGKATAN'
+            DataBinding.DataSource = DataSource1
+            ParentFont = False
+            Properties.CharCase = ecUpperCase
+            Style.Color = clInfoBk
+            Style.Font.Charset = ANSI_CHARSET
+            Style.Font.Color = clWindowText
+            Style.Font.Height = -11
+            Style.Font.Name = 'Tahoma'
+            Style.Font.Style = []
+            Style.LookAndFeel.Kind = lfOffice11
+            Style.LookAndFeel.NativeStyle = True
+            Style.IsFontAssigned = True
+            StyleDisabled.LookAndFeel.Kind = lfOffice11
+            StyleDisabled.LookAndFeel.NativeStyle = True
+            StyleFocused.LookAndFeel.Kind = lfOffice11
+            StyleFocused.LookAndFeel.NativeStyle = True
+            StyleHot.LookAndFeel.Kind = lfOffice11
+            StyleHot.LookAndFeel.NativeStyle = True
+            TabOrder = 0
+            Width = 226
+          end
+          object cxDBCheckBox2: TcxDBCheckBox
+            Left = 16
+            Top = 8
+            Caption = 'AKTIF'
+            DataBinding.DataField = 'IS_AKTIF'
+            DataBinding.DataSource = DataSource1
+            Properties.ValueChecked = '1'
+            Properties.ValueUnchecked = '0'
+            TabOrder = 1
+            Width = 121
+          end
+          object cxDBTextEdit18: TcxDBTextEdit
+            Left = 89
+            Top = 98
+            DataBinding.DataField = 'gudang'
+            DataBinding.DataSource = DataSource1
+            ParentFont = False
+            Properties.CharCase = ecUpperCase
+            Style.Color = clInfoBk
+            Style.Font.Charset = ANSI_CHARSET
+            Style.Font.Color = clWindowText
+            Style.Font.Height = -11
+            Style.Font.Name = 'Tahoma'
+            Style.Font.Style = []
+            Style.LookAndFeel.Kind = lfOffice11
+            Style.LookAndFeel.NativeStyle = True
+            Style.IsFontAssigned = True
+            StyleDisabled.LookAndFeel.Kind = lfOffice11
+            StyleDisabled.LookAndFeel.NativeStyle = True
+            StyleFocused.LookAndFeel.Kind = lfOffice11
+            StyleFocused.LookAndFeel.NativeStyle = True
+            StyleHot.LookAndFeel.Kind = lfOffice11
+            StyleHot.LookAndFeel.NativeStyle = True
+            TabOrder = 2
+            Width = 448
+          end
+          object cxDBTextEdit7: TcxDBTextEdit
+            Left = 89
+            Top = 73
+            DataBinding.DataField = 'KODE'
+            DataBinding.DataSource = DataSource1
+            ParentFont = False
+            Properties.CharCase = ecUpperCase
+            Style.Color = clInfoBk
+            Style.Font.Charset = ANSI_CHARSET
+            Style.Font.Color = clWindowText
+            Style.Font.Height = -11
+            Style.Font.Name = 'Tahoma'
+            Style.Font.Style = []
+            Style.LookAndFeel.Kind = lfOffice11
+            Style.LookAndFeel.NativeStyle = True
+            Style.IsFontAssigned = True
+            StyleDisabled.LookAndFeel.Kind = lfOffice11
+            StyleDisabled.LookAndFeel.NativeStyle = True
+            StyleFocused.LookAndFeel.Kind = lfOffice11
+            StyleFocused.LookAndFeel.NativeStyle = True
+            StyleHot.LookAndFeel.Kind = lfOffice11
+            StyleHot.LookAndFeel.NativeStyle = True
+            TabOrder = 3
+            Width = 226
+          end
+          object cxDBTextEdit1: TcxDBTextEdit
+            Left = 89
+            Top = 47
+            DataBinding.DataField = 'depo'
+            DataBinding.DataSource = DataSource1
+            ParentFont = False
+            Properties.CharCase = ecUpperCase
+            Style.Color = clInfoBk
+            Style.Font.Charset = ANSI_CHARSET
+            Style.Font.Color = clWindowText
+            Style.Font.Height = -11
+            Style.Font.Name = 'Tahoma'
+            Style.Font.Style = []
+            Style.LookAndFeel.Kind = lfOffice11
+            Style.LookAndFeel.NativeStyle = True
+            Style.IsFontAssigned = True
+            StyleDisabled.LookAndFeel.Kind = lfOffice11
+            StyleDisabled.LookAndFeel.NativeStyle = True
+            StyleFocused.LookAndFeel.Kind = lfOffice11
+            StyleFocused.LookAndFeel.NativeStyle = True
+            StyleHot.LookAndFeel.Kind = lfOffice11
+            StyleHot.LookAndFeel.NativeStyle = True
+            TabOrder = 4
+            Width = 226
+          end
+        end
+        object LMDPanelFill1: TLMDPanelFill
+          Left = 0
+          Top = 547
+          Width = 1094
+          Height = 47
+          Align = alBottom
+          Bevel.Mode = bmCustom
+          FillObject.Style = sfGradient
+          FillObject.Gradient.Color = 15530487
+          FillObject.Gradient.EndColor = 14540253
+          TabOrder = 1
+          object DBNavigator: TwwDBNavigator
+            Left = 0
+            Top = 0
+            Width = 1094
+            Height = 47
+            AutosizeStyle = asSizeNavButtons
+            DataSource = DataSource1
+            ImageList = _DataModule.ImgNavigator
+            RepeatInterval.InitialDelay = 500
+            RepeatInterval.Interval = 100
+            Align = alClient
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -11
+            Font.Name = 'Arial Narrow'
+            Font.Style = [fsBold]
+            Transparent = True
+            object Back_BTN: TwwNavButton
+              Left = 0
+              Top = 0
+              Width = 92
+              Height = 47
+              Hint = 'Move to prior record'
+              ImageIndex = 0
+              NumGlyphs = 2
+              ShowText = True
+              Spacing = 3
+              Transparent = False
+              Caption = '&Back'
+              Enabled = False
+              DisabledTextColors.ShadeColor = clGray
+              DisabledTextColors.HighlightColor = clBtnHighlight
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -12
+              Font.Name = 'Arial Narrow'
+              Font.Style = []
+              ParentFont = False
+              ParentShowHint = False
+              ShowHint = True
+              Index = 0
+              Style = nbsPrior
+            end
+            object Next_BTN: TwwNavButton
+              Left = 92
+              Top = 0
+              Width = 92
+              Height = 47
+              Hint = 'Move to next record'
+              ImageIndex = 2
+              NumGlyphs = 2
+              ShowText = True
+              Spacing = 3
+              Transparent = False
+              Caption = 'Nex&t'
+              Enabled = False
+              DisabledTextColors.ShadeColor = clGray
+              DisabledTextColors.HighlightColor = clBtnHighlight
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -12
+              Font.Name = 'Arial Narrow'
+              Font.Style = []
+              ParentFont = False
+              ParentShowHint = False
+              ShowHint = True
+              Index = 1
+              Style = nbsNext
+            end
+            object Refresh_BTN: TwwNavButton
+              Left = 184
+              Top = 0
+              Width = 91
+              Height = 47
+              Hint = 'Refresh the contents of the dataset'
+              ImageIndex = 14
+              NumGlyphs = 2
+              ShowText = True
+              Spacing = 3
+              Transparent = False
+              Caption = 'Re&fresh'
+              Enabled = False
+              DisabledTextColors.ShadeColor = clGray
+              DisabledTextColors.HighlightColor = clBtnHighlight
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -12
+              Font.Name = 'Arial Narrow'
+              Font.Style = []
+              ParentFont = False
+              ParentShowHint = False
+              ShowHint = True
+              Index = 2
+              Style = nbsRefresh
+            end
+            object DBNavigatorButton: TwwNavButton
+              Left = 275
+              Top = 0
+              Width = 91
+              Height = 47
+              Hint = 'Filter the dataset'
+              ImageIndex = 16
+              NumGlyphs = 1
+              ShowText = True
+              Spacing = 4
+              Transparent = False
+              Caption = 'Filter'
+              DisabledTextColors.ShadeColor = clGray
+              DisabledTextColors.HighlightColor = clBtnHighlight
+              Index = 3
+              Style = nbsCustom
+            end
+            object Search_BTN: TwwNavButton
+              Left = 366
+              Top = 0
+              Width = 91
+              Height = 47
+              Hint = 'Search the dataset'
+              ImageIndex = 20
+              NumGlyphs = 2
+              ShowText = True
+              Spacing = 3
+              Transparent = False
+              Caption = 'Searc&h'
+              Enabled = False
+              DisabledTextColors.ShadeColor = clGray
+              DisabledTextColors.HighlightColor = clBtnHighlight
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -12
+              Font.Name = 'Arial Narrow'
+              Font.Style = []
+              ParentFont = False
+              ParentShowHint = False
+              ShowHint = True
+              Index = 4
+              Style = nbsSearchDialog
+            end
+            object Tambah_BTN: TwwNavButton
+              Left = 457
+              Top = 0
+              Width = 91
+              Height = 47
+              Hint = 'Insert new record'
+              ImageIndex = 4
+              NumGlyphs = 2
+              ShowText = True
+              Spacing = 3
+              Transparent = False
+              Caption = '&New'
+              Enabled = False
+              DisabledTextColors.ShadeColor = clGray
+              DisabledTextColors.HighlightColor = clBtnHighlight
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -12
+              Font.Name = 'Arial Narrow'
+              Font.Style = []
+              ParentFont = False
+              ParentShowHint = False
+              ShowHint = True
+              Index = 5
+              Style = nbsInsert
+            end
+            object Hapus_BTN: TwwNavButton
+              Left = 548
+              Top = 0
+              Width = 91
+              Height = 47
+              Hint = 'Delete current record'
+              ImageIndex = 6
+              NumGlyphs = 2
+              ShowText = True
+              Spacing = 3
+              Transparent = False
+              Caption = '&Delete'
+              Enabled = False
+              DisabledTextColors.ShadeColor = clGray
+              DisabledTextColors.HighlightColor = clBtnHighlight
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -12
+              Font.Name = 'Arial Narrow'
+              Font.Style = []
+              ParentFont = False
+              ParentShowHint = False
+              ShowHint = True
+              Index = 6
+              Style = nbsDelete
+            end
+            object Edit_BTN: TwwNavButton
+              Left = 639
+              Top = 0
+              Width = 91
+              Height = 47
+              Hint = 'Edit current record'
+              ImageIndex = 8
+              NumGlyphs = 2
+              ShowText = True
+              Spacing = 3
+              Transparent = False
+              Caption = '&Edit'
+              Enabled = False
+              DisabledTextColors.ShadeColor = clGray
+              DisabledTextColors.HighlightColor = clBtnHighlight
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -12
+              Font.Name = 'Arial Narrow'
+              Font.Style = []
+              ParentFont = False
+              ParentShowHint = False
+              ShowHint = True
+              Index = 7
+              Style = nbsEdit
+            end
+            object Separator2: TwwNavButton
+              Left = 730
+              Top = 0
+              Width = 91
+              Height = 47
+              ImageIndex = 26
+              NumGlyphs = 1
+              Spacing = 3
+              Transparent = False
+              Caption = 'Separator2'
+              Enabled = False
+              DisabledTextColors.ShadeColor = clGray
+              DisabledTextColors.HighlightColor = clBtnHighlight
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -12
+              Font.Name = 'Arial Narrow'
+              Font.Style = []
+              ParentFont = False
+              Index = 8
+              Style = nbsCustom
+            end
+            object Simpan_BTN: TwwNavButton
+              Left = 821
+              Top = 0
+              Width = 91
+              Height = 47
+              Hint = 'Post changes of current record'
+              ImageIndex = 10
+              NumGlyphs = 2
+              ShowText = True
+              Spacing = 3
+              Transparent = False
+              Caption = '&Save'
+              Enabled = False
+              DisabledTextColors.ShadeColor = clGray
+              DisabledTextColors.HighlightColor = clBtnHighlight
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -12
+              Font.Name = 'Arial Narrow'
+              Font.Style = []
+              ParentFont = False
+              ParentShowHint = False
+              ShowHint = True
+              Index = 9
+              Style = nbsPost
+            end
+            object Batal_BTN: TwwNavButton
+              Left = 912
+              Top = 0
+              Width = 91
+              Height = 47
+              Hint = 'Cancel changes made to current record'
+              ImageIndex = 12
+              NumGlyphs = 2
+              ShowText = True
+              Spacing = 3
+              Transparent = False
+              Caption = 'C&ancel'
+              Enabled = False
+              DisabledTextColors.ShadeColor = clGray
+              DisabledTextColors.HighlightColor = clBtnHighlight
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -12
+              Font.Name = 'Arial Narrow'
+              Font.Style = []
+              ParentFont = False
+              ParentShowHint = False
+              ShowHint = True
+              Index = 10
+              Style = nbsCancel
+            end
+            object Exit_BTN: TwwNavButton
+              Left = 1003
+              Top = 0
+              Width = 91
+              Height = 47
+              Hint = 'Close the form'
+              ImageIndex = 24
+              NumGlyphs = 2
+              ShowText = True
+              Spacing = 3
+              Transparent = False
+              Caption = 'E&xit'
+              DisabledTextColors.ShadeColor = clGray
+              DisabledTextColors.HighlightColor = clBtnHighlight
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -12
+              Font.Name = 'Arial Narrow'
+              Font.Style = []
+              ParentFont = False
+              ParentShowHint = False
+              ShowHint = True
+              OnClick = Exit_BTNClick
+              Index = 11
+              Style = nbsCustom
+            end
+          end
+        end
+        object Panel3: TPanel
+          Left = 0
+          Top = 210
+          Width = 1094
+          Height = 337
+          Align = alClient
+          TabOrder = 2
+        end
+      end
+    end
+    object LMDTabSheet2: TLMDTabSheet
+      Left = 4
+      Top = 28
+      Width = 1094
+      Height = 594
+      Bevel.Mode = bmCustom
+      Caption = 'List'
+      object Panel4: TPanel
+        Left = 0
+        Top = 0
+        Width = 1094
+        Height = 594
+        Align = alClient
+        BevelOuter = bvNone
+        TabOrder = 0
+        object cxGrid1: TcxGrid
+          Left = 0
+          Top = 86
+          Width = 1094
+          Height = 508
+          Align = alClient
+          BevelInner = bvNone
+          BevelOuter = bvNone
+          TabOrder = 1
+          LookAndFeel.Kind = lfOffice11
+          LookAndFeel.NativeStyle = False
+          object cxGrid1DBTableView1: TcxGridDBTableView
+            NavigatorButtons.ConfirmDelete = False
+            NavigatorButtons.Insert.Visible = False
+            NavigatorButtons.Delete.Visible = False
+            NavigatorButtons.Edit.Visible = False
+            NavigatorButtons.Post.Visible = False
+            NavigatorButtons.Cancel.Visible = False
+            DataController.DataSource = DataSource1
+            DataController.Filter.Active = True
+            DataController.Filter.AutoDataSetFilter = True
+            DataController.Summary.DefaultGroupSummaryItems = <>
+            DataController.Summary.FooterSummaryItems = <>
+            DataController.Summary.SummaryGroups = <>
+            OptionsBehavior.FocusCellOnTab = True
+            OptionsBehavior.FocusFirstCellOnNewRecord = True
+            OptionsBehavior.GoToNextCellOnEnter = True
+            OptionsBehavior.IncSearch = True
+            OptionsBehavior.NavigatorHints = True
+            OptionsBehavior.FocusCellOnCycle = True
+            OptionsData.Deleting = False
+            OptionsData.Editing = False
+            OptionsData.Inserting = False
+            OptionsView.Navigator = True
+            OptionsView.GridLineColor = clBtnFace
+            Styles.ContentEven = _DataModule.cxStyle20
+            Styles.ContentOdd = _DataModule.cxStyle1
+            Styles.Footer = _DataModule.cxStyle1
+            Styles.GroupByBox = _DataModule.cxStyle12
+            object cxGrid1DBTableView1TIPE_REKANAN: TcxGridDBColumn
+              Caption = 'Tipe'
+              DataBinding.FieldName = 'TIPE_REKANAN'
+              PropertiesClassName = 'TcxImageComboBoxProperties'
+              Properties.Items = <
+                item
+                  Description = 'Customer'
+                  ImageIndex = 0
+                  Value = '1'
+                end
+                item
+                  Description = 'Supplier'
+                  Value = '2'
+                end
+                item
+                  Description = 'Customer + Supplier'
+                  Value = '3'
+                end>
+              Options.Editing = False
+              Width = 62
+            end
+            object cxGrid1DBTableView1KD_CUSTOMER: TcxGridDBColumn
+              DataBinding.FieldName = 'KD_CUSTOMER'
+              Options.Editing = False
+              Width = 52
+            end
+            object cxGrid1DBTableView1NM_CUSTOMER: TcxGridDBColumn
+              DataBinding.FieldName = 'NM_CUSTOMER'
+              Options.Editing = False
+              Width = 196
+            end
+            object cxGrid1DBTableView1TIPE_PERUSAHAAN: TcxGridDBColumn
+              Caption = 'Tipe Prshn.'
+              DataBinding.FieldName = 'TIPE_PERUSAHAAN'
+              Width = 76
+            end
+            object cxGrid1DBTableView1ALAMAT_BILL: TcxGridDBColumn
+              Caption = 'ALAMAT'
+              DataBinding.FieldName = 'ALAMAT_BILL'
+              Width = 254
+            end
+            object cxGrid1DBTableView1KOTA_BILL: TcxGridDBColumn
+              Caption = 'KOTA'
+              DataBinding.FieldName = 'KOTA_BILL'
+              Width = 88
+            end
+            object cxGrid1DBTableView1IS_AKTIF: TcxGridDBColumn
+              Caption = 'AKTIF'
+              DataBinding.FieldName = 'IS_AKTIF'
+              PropertiesClassName = 'TcxCheckBoxProperties'
+              Properties.ValueChecked = 'T'
+              Properties.ValueUnchecked = 'F'
+              Options.Editing = False
+              Width = 100
+            end
+            object cxGrid1DBTableView1NM_CP: TcxGridDBColumn
+              DataBinding.FieldName = 'NM_CP'
+              Width = 127
+            end
+            object cxGrid1DBTableView1TELEPON_CP: TcxGridDBColumn
+              DataBinding.FieldName = 'TELEPON_CP'
+              Width = 100
+            end
+            object cxGrid1DBTableView1FAX_CP: TcxGridDBColumn
+              DataBinding.FieldName = 'FAX_CP'
+              Width = 100
+            end
+            object cxGrid1DBTableView1JABATAN_CP: TcxGridDBColumn
+              DataBinding.FieldName = 'JABATAN_CP'
+              Width = 100
+            end
+            object cxGrid1DBTableView1NM_CP_2: TcxGridDBColumn
+              DataBinding.FieldName = 'NM_CP_2'
+              Width = 100
+            end
+            object cxGrid1DBTableView1TELPON_CP_2: TcxGridDBColumn
+              DataBinding.FieldName = 'TELPON_CP_2'
+              Width = 100
+            end
+            object cxGrid1DBTableView1FAX_CP_2: TcxGridDBColumn
+              DataBinding.FieldName = 'FAX_CP_2'
+              Width = 100
+            end
+            object cxGrid1DBTableView1JABATAN_CP_2: TcxGridDBColumn
+              DataBinding.FieldName = 'JABATAN_CP_2'
+              Width = 100
+            end
+            object cxGrid1DBTableView1NM_CP_3: TcxGridDBColumn
+              DataBinding.FieldName = 'NM_CP_3'
+              Width = 100
+            end
+            object cxGrid1DBTableView1TELPON_CP_3: TcxGridDBColumn
+              DataBinding.FieldName = 'TELPON_CP_3'
+              Width = 100
+            end
+            object cxGrid1DBTableView1FAX_CP_3: TcxGridDBColumn
+              DataBinding.FieldName = 'FAX_CP_3'
+              Width = 100
+            end
+            object cxGrid1DBTableView1JABATAN_CP_3: TcxGridDBColumn
+              DataBinding.FieldName = 'JABATAN_CP_3'
+              Width = 100
+            end
+          end
+          object cxGrid1DBBDTBView1: TcxGridDBBandedTableView
+            NavigatorButtons.ConfirmDelete = False
+            NavigatorButtons.Insert.Visible = False
+            NavigatorButtons.Delete.Visible = False
+            NavigatorButtons.Edit.Visible = False
+            NavigatorButtons.Cancel.Visible = False
+            NavigatorButtons.SaveBookmark.Visible = False
+            NavigatorButtons.GotoBookmark.Visible = False
+            DataController.DataSource = DataSource1
+            DataController.Summary.DefaultGroupSummaryItems = <>
+            DataController.Summary.FooterSummaryItems = <>
+            DataController.Summary.SummaryGroups = <>
+            OptionsBehavior.GoToNextCellOnEnter = True
+            OptionsBehavior.IncSearch = True
+            OptionsView.Navigator = True
+            OptionsView.GridLineColor = clBtnFace
+            Styles.ContentEven = _DataModule.cxStyle20
+            Styles.ContentOdd = _DataModule.cxStyle1
+            Styles.Footer = _DataModule.cxStyle1
+            Styles.GroupByBox = _DataModule.cxStyle12
+            Styles.Header = _DataModule.cxStyle19
+            Styles.BandHeader = _DataModule.cxStyle19
+            Bands = <
+              item
+                Caption = 'CUSTOMER'
+                Width = 827
+              end
+              item
+                Caption = 'CONTACT PERSON'
+              end
+              item
+                Width = 151
+              end>
+            object cxGrid1DBBDTBView1TANGGAL_DFTR: TcxGridDBBandedColumn
+              Caption = 'TANGGAL DFTR'
+              DataBinding.FieldName = 'TANGGAL_DFTR'
+              Width = 96
+              Position.BandIndex = 0
+              Position.ColIndex = 0
+              Position.RowIndex = 0
+            end
+            object cxGrid1DBBDTBView1TIPE_REKANAN: TcxGridDBBandedColumn
+              Caption = 'Tipe'
+              DataBinding.FieldName = 'TIPE_REKANAN'
+              PropertiesClassName = 'TcxImageComboBoxProperties'
+              Properties.Items = <
+                item
+                  Description = 'Customer'
+                  ImageIndex = 0
+                  Value = '1'
+                end
+                item
+                  Description = 'Supplier'
+                  Value = '2'
+                end
+                item
+                  Description = 'Customer + Supplier'
+                  Value = '3'
+                end>
+              Options.Editing = False
+              Styles.Content = _DataModule.cxStyle6
+              Width = 68
+              Position.BandIndex = 0
+              Position.ColIndex = 1
+              Position.RowIndex = 0
+            end
+            object cxGrid1DBBDTBView1KD_CUSTOMER: TcxGridDBBandedColumn
+              Caption = 'KODE'
+              DataBinding.FieldName = 'KD_CUSTOMER'
+              Options.Editing = False
+              Width = 57
+              Position.BandIndex = 0
+              Position.ColIndex = 2
+              Position.RowIndex = 0
+            end
+            object cxGrid1DBBDTBView1NM_CUSTOMER: TcxGridDBBandedColumn
+              Caption = 'NAMA'
+              DataBinding.FieldName = 'NM_CUSTOMER'
+              Options.Editing = False
+              Width = 179
+              Position.BandIndex = 0
+              Position.ColIndex = 3
+              Position.RowIndex = 0
+            end
+            object cxGrid1DBBDTBView1TIPE_PERUSAHAAN: TcxGridDBBandedColumn
+              Caption = 'Tipe Prshn.'
+              DataBinding.FieldName = 'TIPE_PERUSAHAAN'
+              Options.Editing = False
+              Width = 75
+              Position.BandIndex = 0
+              Position.ColIndex = 4
+              Position.RowIndex = 0
+            end
+            object cxGrid1DBBDTBView1ALAMAT_BILL: TcxGridDBBandedColumn
+              Caption = 'Alamat'
+              DataBinding.FieldName = 'ALAMAT_BILL'
+              Options.Editing = False
+              Width = 214
+              Position.BandIndex = 0
+              Position.ColIndex = 5
+              Position.RowIndex = 0
+            end
+            object cxGrid1DBBDTBView1KOTA_BILL: TcxGridDBBandedColumn
+              Caption = 'Kota'
+              DataBinding.FieldName = 'KOTA_BILL'
+              Options.Editing = False
+              Width = 72
+              Position.BandIndex = 0
+              Position.ColIndex = 6
+              Position.RowIndex = 0
+            end
+            object cxGrid1DBBDTBView1IS_AKTIF: TcxGridDBBandedColumn
+              DataBinding.FieldName = 'IS_AKTIF'
+              PropertiesClassName = 'TcxCheckBoxProperties'
+              Properties.ValueChecked = 'T'
+              Properties.ValueUnchecked = 'F'
+              Options.Editing = False
+              Width = 66
+              Position.BandIndex = 0
+              Position.ColIndex = 7
+              Position.RowIndex = 0
+            end
+            object cxGrid1DBBDTBView1NM_CP: TcxGridDBBandedColumn
+              Caption = 'Nama'
+              DataBinding.FieldName = 'NM_CP'
+              Options.Editing = False
+              Width = 100
+              Position.BandIndex = 1
+              Position.ColIndex = 0
+              Position.RowIndex = 0
+            end
+            object cxGrid1DBBDTBView1JABATAN_CP: TcxGridDBBandedColumn
+              Caption = 'Jabatan'
+              DataBinding.FieldName = 'JABATAN_CP'
+              Options.Editing = False
+              Width = 108
+              Position.BandIndex = 1
+              Position.ColIndex = 1
+              Position.RowIndex = 0
+            end
+            object cxGrid1DBBDTBView1TELEPON_CP: TcxGridDBBandedColumn
+              Caption = 'Telpon'
+              DataBinding.FieldName = 'TELEPON_CP'
+              Options.Editing = False
+              Width = 100
+              Position.BandIndex = 1
+              Position.ColIndex = 2
+              Position.RowIndex = 0
+            end
+            object cxGrid1DBBDTBView1FAX_CP: TcxGridDBBandedColumn
+              Caption = 'Fax'
+              DataBinding.FieldName = 'FAX_CP'
+              Options.Editing = False
+              Width = 100
+              Position.BandIndex = 1
+              Position.ColIndex = 3
+              Position.RowIndex = 0
+            end
+            object cxGrid1DBBDTBView1HP_CP: TcxGridDBBandedColumn
+              Caption = 'HP'
+              DataBinding.FieldName = 'HP_CP'
+              Options.Editing = False
+              Width = 100
+              Position.BandIndex = 1
+              Position.ColIndex = 4
+              Position.RowIndex = 0
+            end
+            object cxGrid1DBBDTBView1NPWP: TcxGridDBBandedColumn
+              Caption = 'N.P.W.P.'
+              DataBinding.FieldName = 'NPWP'
+              Options.Editing = False
+              Width = 131
+              Position.BandIndex = 2
+              Position.ColIndex = 0
+              Position.RowIndex = 0
+            end
+            object cxGrid1DBBDTBView1LAST_USER_EDIT: TcxGridDBBandedColumn
+              Caption = 'LAST USER EDIT DATA'
+              DataBinding.FieldName = 'LAST_USER_EDIT'
+              Width = 20
+              Position.BandIndex = 2
+              Position.ColIndex = 1
+              Position.RowIndex = 0
+            end
+          end
+          object cxGrid1DBTableView2: TcxGridDBTableView
+            NavigatorButtons.ConfirmDelete = False
+            DataController.DataSource = DataSource1
+            DataController.Summary.DefaultGroupSummaryItems = <
+              item
+                Format = 'N: #,##0.;(#,##0.)'
+                Kind = skCount
+                FieldName = 'KODE'
+              end>
+            DataController.Summary.FooterSummaryItems = <
+              item
+                Format = 'N: #,##0.;(#,##0.)'
+                Kind = skCount
+                FieldName = 'KODE'
+              end>
+            DataController.Summary.SummaryGroups = <>
+            OptionsView.Navigator = True
+            OptionsView.ColumnAutoWidth = True
+            OptionsView.Footer = True
+            object cxGrid1DBTableView2depo: TcxGridDBColumn
+              Caption = 'Sub Unit'
+              DataBinding.FieldName = 'depo'
+            end
+            object cxGrid1DBTableView2kode: TcxGridDBColumn
+              Caption = 'Kode'
+              DataBinding.FieldName = 'kode'
+            end
+            object cxGrid1DBTableView2gudang: TcxGridDBColumn
+              Caption = 'Gudang'
+              DataBinding.FieldName = 'gudang'
+            end
+            object cxGrid1DBTableView2SINGKATAN: TcxGridDBColumn
+              Caption = 'Singkatan'
+              DataBinding.FieldName = 'SINGKATAN'
+            end
+          end
+          object cxGrid1Level1: TcxGridLevel
+            GridView = cxGrid1DBTableView2
+          end
+        end
+        object Panel5: TPanel
+          Left = 0
+          Top = 0
+          Width = 1094
+          Height = 86
+          Align = alTop
+          BevelOuter = bvNone
+          Color = 16508897
+          TabOrder = 0
+          object wwDBNavigator1: TwwDBNavigator
+            Left = 13
+            Top = 15
+            Width = 172
+            Height = 46
+            AutosizeStyle = asSizeNavButtons
+            DataSource = DataSource1
+            ImageList = _DataModule.ImgNavigator
+            RepeatInterval.InitialDelay = 500
+            RepeatInterval.Interval = 100
+            Transparent = True
+            object Export_BTN: TwwNavButton
+              Left = 0
+              Top = 0
+              Width = 86
+              Height = 46
+              ImageIndex = 16
+              NumGlyphs = 1
+              ShowText = True
+              Spacing = 4
+              Transparent = False
+              Caption = 'Export Data'
+              DisabledTextColors.ShadeColor = clGray
+              DisabledTextColors.HighlightColor = clBtnHighlight
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -9
+              Font.Name = 'Tahoma'
+              Font.Style = []
+              ParentFont = False
+              OnClick = Export_BTNClick
+              Index = 0
+              Style = nbsCustom
+            end
+            object wwDBNavigator1Button: TwwNavButton
+              Left = 86
+              Top = 0
+              Width = 86
+              Height = 46
+              ImageIndex = 8
+              NumGlyphs = 1
+              ShowText = True
+              Spacing = 4
+              Transparent = False
+              Caption = 'Import Data'
+              DisabledTextColors.ShadeColor = clGray
+              DisabledTextColors.HighlightColor = clBtnHighlight
+              OnClick = wwDBNavigator1ButtonClick
+              Index = 1
+              Style = nbsCustom
+            end
+          end
+        end
+      end
+    end
+  end
+  object DataSource1: TDataSource
+    DataSet = _DataModuleMaster.Lks_gudang
+    Left = 26
+    Top = 376
+  end
+  object QImport3Wizard1: TQImport3Wizard
+    Formats.BooleanTrue.Strings = (
+      'True')
+    Formats.BooleanFalse.Strings = (
+      'False')
+    Formats.NullValues.Strings = (
+      'Null')
+    FieldFormats = <>
+    ErrorLogFileName = 'error.log'
+    AddType = qatInsert
+    Left = 112
+    Top = 375
+  end
+end
