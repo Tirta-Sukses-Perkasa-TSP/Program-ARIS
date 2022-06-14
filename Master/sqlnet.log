@@ -1,0 +1,38 @@
+
+
+***********************************************************************
+Fatal NI connect error 12500, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=192.168.1.71)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=bsb)(CID=(PROGRAM=C:\Program Files\Borland\Delphi6\Bin\delphi32.exe)(HOST=ITBSB2)(USER=IT-NOTEBOOK))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 9.0.1.1.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 9.0.1.1.0 - Production
+  Time: 07-JAN-2009 12:16:25
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12564
+    TNS-12564: TNS:connection refused
+    ns secondary err code: 0
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12500, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=192.168.1.71)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=bsb)(CID=(PROGRAM=C:\Program Files\Borland\Delphi6\Bin\delphi32.exe)(HOST=ITBSB2)(USER=IT-NOTEBOOK))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 9.0.1.1.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 9.0.1.1.0 - Production
+  Time: 07-JAN-2009 12:16:42
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12564
+    TNS-12564: TNS:connection refused
+    ns secondary err code: 0
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
